@@ -39,11 +39,11 @@ var options = {
 console.log(approximateHash(obj, options));
 ```
 
-`objectDepth` - objects will be analyzed up to the given length
+`objectDepth` - argument object will be analyzed up to the given depth
 
-`arrayDepth` - maximal number of elements taken from the arrays
+`arrayDepth` - maximal number of elements taken from each array
  
-`stringDepth` - maximal number of characters taken into account
+`stringDepth` - maximal number of characters taken from each string
 
 Bugs and Issues
 ------------
