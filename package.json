@@ -1,0 +1,26 @@
+{
+  "name": "approximate-hash",
+  "version": "0.0.1",
+  "description": "Fast approximate hash for large objects",
+  "main": "lib/approximate-hash.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "fast",
+    "hash",
+    "approximate",
+    "large",
+    "objects",
+    "arrays"
+  ],
+  "author": "Mateusz Jaworski",
+  "license": "MIT",
+  "dependencies": {
+    "crypto": "0.0.3",
+    "lodash": "^4.6.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  }
+}
