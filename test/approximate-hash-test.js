@@ -25,7 +25,7 @@ describe('Approximate hash test', () => {
         let given = approximateHash(obj);
 
         // then
-        assert.equal('e179ee90a21da6b9bb3cf450e3b855e5', given);
+        assert.equal('c0d76cd9b4a1e343e284456ab4471825', given);
     });
 
     it('should return different hash for different functions', function () {

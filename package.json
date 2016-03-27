@@ -1,6 +1,6 @@
 {
   "name": "approximate-hash",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Fast approximate hash for large objects",
   "main": "lib/approximate-hash.js",
   "scripts": {
@@ -17,7 +17,7 @@
   "author": "Mateusz Jaworski",
   "license": "MIT",
   "dependencies": {
-    "crypto": "0.0.3",
+    "js-md5": "^0.4.0",
     "lodash": "^4.6.1"
   },
   "devDependencies": {

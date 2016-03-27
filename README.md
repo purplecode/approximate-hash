@@ -22,7 +22,7 @@ var obj = {
 
 console.log(approximateHash(obj));
 
-// e179ee90a21da6b9bb3cf450e3b855e5
+// c0d76cd9b4a1e343e284456ab4471825
 ```
 
 API
@@ -31,8 +31,6 @@ API
 var approximateHash = require('approximate-hash');
 
 var options = {
-    encoding: 'hex', // 'hex', 'binary' or 'base64'
-    algorithm: 'md5', // 'md5', 'sha256', 'sha512'
     objectDepth: 7,
     arrayDepth: 7,
     stringDepth: 100
@@ -41,9 +39,18 @@ var options = {
 console.log(approximateHash(obj, options));
 ```
 
+`objectDepth` - objects will be analyzed up to the given length
+
+`arrayDepth` - maximal number of elements taken from the arrays
+ 
+`stringDepth` - maximal number of characters taken into account
+
 Bugs and Issues
 ------------
-Current version does not work in the browser, because of crypto package usage.
+-
 
+License
+------------
+The project is released under the [MIT license](http://www.opensource.org/licenses/MIT).
 
 Enjoy!
