@@ -1,6 +1,6 @@
 {
   "name": "approximate-hash",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Fast approximate hash for large objects",
   "main": "lib/approximate-hash.js",
   "repository": {
