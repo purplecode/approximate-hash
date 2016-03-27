@@ -21,6 +21,8 @@ var obj = {
 };
 
 console.log(approximateHash(obj));
+
+// e179ee90a21da6b9bb3cf450e3b855e5
 ```
 
 API
@@ -38,3 +40,10 @@ var options = {
 
 console.log(approximateHash(obj, options));
 ```
+
+Bugs and Issues
+------------
+Current version does not work in the browser, because of crypto package usage.
+
+
+Enjoy!
