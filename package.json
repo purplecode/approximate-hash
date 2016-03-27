@@ -3,6 +3,10 @@
   "version": "0.0.2",
   "description": "Fast approximate hash for large objects",
   "main": "lib/approximate-hash.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/purplecode/approximate-hash.git"
+  },
   "scripts": {
     "test": "mocha"
   },
