@@ -1,0 +1,25 @@
+{
+  "name": "approximate-hash",
+  "description": "Fast approximate hash for large objects",
+  "main": "lib/approximate-hash.js",
+  "authors": [
+    "Mateusz Jaworski"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "fast",
+    "hash",
+    "approximate",
+    "large",
+    "objects",
+    "arrays"
+  ],
+  "homepage": "https://github.com/purplecode/approximate-hash",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ]
+}
