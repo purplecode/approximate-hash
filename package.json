@@ -8,7 +8,7 @@
     "url": "https://github.com/purplecode/approximate-hash.git"
   },
   "scripts": {
-    "test": "mocha",
+    "test": "jshint lib/approximate-hash.js && mocha",
     "build": "uglifyjs lib/approximate-hash.js -m --source-map lib/approximate-hash.map -o lib/approximate-hash-min.js"
   },
   "keywords": [
