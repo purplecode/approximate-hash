@@ -25,7 +25,7 @@ describe('Approximate hash test', () => {
         let given = approximateHash(obj);
 
         // then
-        assert.equal('c0d76cd9b4a1e343e284456ab4471825', given);
+        assert.equal('fbc021a05e92a22f044a92952f88aef9', given);
     });
 
     it('should return different hash for different functions', function () {
@@ -44,8 +44,8 @@ describe('Approximate hash test', () => {
     it('should use short string prefix', function () {
         // given
         let long = 'aaaaaaaaaaaaaaaaaaaaaa';
-        let short = 'aaaaaa';
-        let other = 'aaaaab';
+        let short = 'aaaaaa________________';
+        let other = 'aaaaa_________________';
 
         let options = {
             stringDepth: 6
@@ -74,8 +74,8 @@ describe('Approximate hash test', () => {
     it('should hash arrays shallowly', function () {
         // given
         let deep = [1, 2, 3, 4, 5, 6, 7];
-        let shallow = [1, 2, 3, 4];
-        let other = [1, 2, 3, 5];
+        let shallow = [1, 2, 3, 4, 0, 0, 0];
+        let other = [1, 2, 3, 5, 0, 0, 0];
 
         let options = {
             arrayDepth: 4
@@ -88,8 +88,8 @@ describe('Approximate hash test', () => {
 
     it('should not fail on undefined', function () {
         // then
-        assert.equal(approximateHash(null), approximateHash('null'));
-        assert.equal(approximateHash(), approximateHash('undefined'));
+        assert.equal('37a6259cc0c1dae299a7866489dff0bd', approximateHash(null));
+        assert.equal('5e543256c480ac577d30f76f9120eb74', approximateHash());
     });
 
 });

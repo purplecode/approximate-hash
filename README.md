@@ -6,9 +6,14 @@ It does not use all of the objects but is just sampling them up to the given dep
 
 Installation
 ------------
+For node.js:
 ```
 npm install approximate-hash
+```
 
+For bower:
+```
+bower install approximate-hash
 ```
 
 Usage
@@ -17,7 +22,7 @@ Usage
 var approximateHash = require('approximate-hash');
 
 var obj = {
-    ...large, deeply nested object
+    ...large, deeply nested object or array
 };
 
 console.log(approximateHash(obj));
