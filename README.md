@@ -1,4 +1,5 @@
-# approximate-hash [![Build Status](https://travis-ci.org/purplecode/approximate-hash.svg?branch=master)](https://travis-ci.org/purplecode/approximate-hash)
+# approximate-hash [![Build Status](https://travis-ci.org/purplecode/approximate-hash.svg?branch=master)](https://travis-ci.org/purplecode/approximate-hash) [![Dependencies](https://david-dm.org/purplecode/approximate-hash.svg)](https://david-dm.org/purplecode/approximate-hash.svg)
+
 
 Super fast approximate hashing function for large, deeply nested objects and arrays, also with circular dependencies.  
 It does not use all of the objects but is just sampling them up to the given depth or length.
